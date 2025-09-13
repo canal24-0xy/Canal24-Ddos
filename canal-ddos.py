@@ -25,13 +25,13 @@ logo = """
 """
 
 print("Author   : Canal24")
-print("github   : https://github.com/Manan-Maharwal")
+print("github   : https://github.com/canal24")
 
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
 
 os.system("clear")
-os.system("figlet Attack Starting")
+os.system("fade Attack Starting")
 print("[                    ] 0% ")
 time.sleep(5)
 print("[=====               ] 25%")
