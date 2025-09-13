@@ -27,8 +27,8 @@ logo = """
 print("Author   : Canal24")
 print("github   : https://github.com/canal24")
 
-ip = raw_input("IP Target : ")
-port = input("Port       : ")
+ip = input("==⟩IP Target : ")
+port = input("==⟩Port       : ")
 
 os.system("clear")
 os.system("fade Attack Starting")
